@@ -29,7 +29,7 @@ struct User  {
     static var Factures = User.bit [13]
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet var button_entity: UIButton!
@@ -37,8 +37,14 @@ class ViewController: UIViewController {
     @IBOutlet var password: UITextField!
     @IBAction func button(sender: AnyObject) {
     }
+    func CloseKeyboard() {
+            view.endEditing(true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let touch: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.CloseKeyboard))
+        view.addGestureRecognizer(touch)
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -132,5 +138,13 @@ class ViewController: UIViewController {
         }
         return false
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    //Calls this function when the tap is recognized.
 }
 
