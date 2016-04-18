@@ -54,6 +54,9 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         
         let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        let mapCenter = MapView.userLocation.coordinate
+        var mapCamera = MKMapCamera(lookingAtCenterCoordinate: mapCenter, fromEyeCoordinate: mapCenter, eyeAltitude: 1000)
+        MapView.setCamera(mapCamera, animated: true)
         
         
         self.MapView.setRegion(region, animated: true)
@@ -72,9 +75,6 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         locationManager.stopUpdatingLocation()
         
     }
-    
-    
-    //--- Uncomment to add custom annotation view ---//
     
      //--- use this code to add custom image (Annotation) for pin point ---//
      func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView?
