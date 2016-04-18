@@ -32,73 +32,18 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
+
         
         
         let location = self.locationManager.location
         
-        var latitude: Double = location!.coordinate.latitude
+        let latitude: Double = location!.coordinate.latitude
         let longitude: Double = location!.coordinate.longitude
-    }
-    
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        
-    }
-    
-    func locationManager(manager: CLLocationManager, didUpdateToLocations locations: [AnyObject])
-    {
-        //-
-        
-        let location = locations.last as! CLLocation
-        
-        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        print(latitude)
+        print(longitude)
+        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-        let mapCenter = MapView.userLocation.coordinate
-        var mapCamera = MKMapCamera(lookingAtCenterCoordinate: mapCenter, fromEyeCoordinate: mapCenter, eyeAltitude: 1000)
-        MapView.setCamera(mapCamera, animated: true)
-        
-        
         self.MapView.setRegion(region, animated: true)
-        
-        
-        // Add an annotation on Map View
-        let point: MKPointAnnotation! = MKPointAnnotation()
-        
-        point.coordinate = location.coordinate
-        point.title = "Current Location"
-        point.subtitle = "sub title"
-        
-        self.MapView.addAnnotation(point)
-        
-        //stop updating location to save battery life
         locationManager.stopUpdatingLocation()
-        
     }
-    
-     //--- use this code to add custom image (Annotation) for pin point ---//
-     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView?
-     {
-     if !(annotation is MKPointAnnotation)
-     {
-     return nil
-     }
-     
-     let reuseId = "test"
-     
-     var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId)
-     
-     if anView == nil
-     {
-     anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-     anView!.image = UIImage(named:"1.png")
-     anView!.canShowCallout = true
-     }
-     else
-     {
-     anView!.annotation = annotation
-     }
-     
-     return anView
-     }
 }
