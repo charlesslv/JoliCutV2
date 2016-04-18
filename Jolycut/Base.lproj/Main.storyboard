@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EE1-o9-xkv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Gh-nR-UdD">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,6 +7,8 @@
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
             <string>Comfortaa-Bold</string>
             <string>Comfortaa-Bold</string>
             <string>Comfortaa-Bold</string>
@@ -94,6 +96,54 @@
                                 </constraints>
                                 <color key="barTintColor" red="0.16862745098039217" green="0.16078431372549018" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJS-Uf-Yv9">
+                                <rect key="frame" x="124" y="28" width="126" height="99"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCa-i1-qIb">
+                                <rect key="frame" x="124" y="142" width="126" height="30"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.68235294120000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYd-SW-tAi">
+                                <rect key="frame" x="20" y="202" width="335" height="30"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
+                                <state key="normal" title="Mes informations">
+                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5N-HU-OhQ">
+                                <rect key="frame" x="20" y="240" width="335" height="30"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
+                                <state key="normal" title="Modes de versement">
+                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blz-4S-bmA">
+                                <rect key="frame" x="20" y="280" width="335" height="30"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
+                                <state key="normal" title="Mes factures">
+                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Elz-Sf-C3d">
+                                <rect key="frame" x="20" y="320" width="335" height="30"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
+                                <state key="normal" title="Déconnexion">
+                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ack.png" translatesAutoresizingMaskIntoConstraints="NO" id="emJ-Zf-ahR">
+                                <rect key="frame" x="333" y="205" width="22" height="23"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ack.png" translatesAutoresizingMaskIntoConstraints="NO" id="bkP-Ef-V09">
+                                <rect key="frame" x="333" y="243" width="22" height="23"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ack.png" translatesAutoresizingMaskIntoConstraints="NO" id="QOm-yY-kJd">
+                                <rect key="frame" x="333" y="283" width="22" height="23"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -164,6 +214,30 @@
                                 </constraints>
                                 <color key="barTintColor" red="0.16862745098039217" green="0.16078431372549018" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFt-k7-ZkU">
+                                <rect key="frame" x="0.0" y="53" width="375" height="65"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V2l-ej-mCl">
+                                <rect key="frame" x="11" y="53" width="64" height="65"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6m-5H-psw">
+                                <rect key="frame" x="325" y="97" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vt-Dd-0VN">
+                                <rect key="frame" x="325" y="68" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desriptions / services proposé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqz-uk-am0">
+                                <rect key="frame" x="83" y="58" width="234" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -178,99 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1394" y="448"/>
-        </scene>
-        <!--Acceuil-->
-        <scene sceneID="SWK-on-OXf">
-            <objects>
-                <viewController id="EE1-o9-xkv" customClass="Acceuil" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gIq-Dg-ZnG"/>
-                        <viewControllerLayoutGuide type="bottom" id="8Ty-wQ-ckX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PBi-Vl-HCb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bU-GQ-cox">
-                                <rect key="frame" x="46" y="115" width="46" height="30"/>
-                                <state key="normal" title="Pro"/>
-                                <connections>
-                                    <segue destination="PM7-3P-4ys" kind="show" id="JeN-na-WFh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaJ-0c-498">
-                                <rect key="frame" x="277" y="115" width="46" height="30"/>
-                                <state key="normal" title="Part"/>
-                                <connections>
-                                    <segue destination="1Gh-nR-UdD" kind="show" id="FcC-Zw-Qc0"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVP-JR-6aD">
-                                <rect key="frame" x="138" y="307" width="98" height="53"/>
-                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Mh-Db-q71" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-838.5" y="2807.5"/>
-        </scene>
-        <!--Connexion Pro-->
-        <scene sceneID="D8z-ZY-g1A">
-            <objects>
-                <viewController id="PM7-3P-4ys" customClass="ConnexionPro" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Tsf-05-358"/>
-                        <viewControllerLayoutGuide type="bottom" id="hL9-lV-gU2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TDR-Jq-shu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wO-im-BTM">
-                                <rect key="frame" x="91" y="166" width="192" height="30"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mot de passe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZ1-Tw-d5x">
-                                <rect key="frame" x="91" y="230" width="192" height="30"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT3-hr-Vjm">
-                                <rect key="frame" x="91" y="319" width="192" height="30"/>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.68235294120000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
-                                <state key="normal" title="Connexion">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Uq0-US-a2u" kind="show" id="CCb-1l-tlf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvf-bv-7br">
-                                <rect key="frame" x="20" y="20" width="32" height="31"/>
-                                <state key="normal" image="arrows.png"/>
-                                <connections>
-                                    <segue destination="EE1-o9-xkv" kind="show" id="R7y-n2-ggs"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.16862745100000001" green="0.16078431369999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pKh-br-JLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-297.5" y="3471.5"/>
+            <point key="canvasLocation" x="1393.5" y="447.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u7S-Sn-BMj">
@@ -292,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5U-3p-sp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120.5" y="5100.5"/>
+            <point key="canvasLocation" x="1393.5" y="4604.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wrN-p8-Z6u">
@@ -313,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJI-Wz-qVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120.5" y="4320.5"/>
+            <point key="canvasLocation" x="1393.5" y="3816.5"/>
         </scene>
         <!--First Tab Pro-->
         <scene sceneID="bhc-3S-cJG">
@@ -334,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXn-8J-zd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120.5" y="3471.5"/>
+            <point key="canvasLocation" x="1393.5" y="2971.5"/>
         </scene>
         <!--Tab Bar Pro-->
         <scene sceneID="RrR-ex-bSU">
@@ -355,7 +337,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dg3-Ji-wWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306.5" y="3471.5"/>
+            <point key="canvasLocation" x="856.5" y="2971.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UEV-di-CJx">
@@ -377,12 +359,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihf-dr-0YU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120.5" y="5872.5"/>
+            <point key="canvasLocation" x="1393.5" y="5352.5"/>
         </scene>
         <!--Void Controller-->
         <scene sceneID="SzA-ez-MiR">
             <objects>
-                <viewController title="Void Controller" id="1Gh-nR-UdD" sceneMemberID="viewController">
+                <viewController title="Void Controller" id="1Gh-nR-UdD" customClass="JolicutViewController" customModule="JoliCut" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vor-Ts-tH2"/>
                         <viewControllerLayoutGuide type="bottom" id="WFq-sO-nGB"/>
@@ -391,9 +373,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RDZ-aU-pyD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPB-Mf-4sd">
                                 <rect key="frame" x="20" y="494" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.68235294120000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
@@ -419,36 +398,39 @@
                                     <segue destination="3A7-EV-UYn" kind="show" id="ZJs-Lc-Q6x"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TV6-hQ-4GV">
-                                <rect key="frame" x="324" y="20" width="31" height="31"/>
-                                <state key="normal" image="cross2.png"/>
-                                <connections>
-                                    <segue destination="EE1-o9-xkv" kind="show" id="1IF-Qy-m9t"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="J O L I C U T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kei-B2-IoY">
+                                <rect key="frame" x="37" y="364" width="300" height="63"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="50"/>
+                                <color key="textColor" red="0.91764705879999997" green="0.68235294120000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JOLICUT.png" translatesAutoresizingMaskIntoConstraints="NO" id="mml-KB-ajc">
+                                <rect key="frame" x="37" y="40" width="300" height="375"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VPB-Mf-4sd" firstAttribute="centerX" secondItem="y3G-BC-DH6" secondAttribute="centerX" id="29q-ja-3vL"/>
-                            <constraint firstItem="RDZ-aU-pyD" firstAttribute="leading" secondItem="y3G-BC-DH6" secondAttribute="leading" id="8aX-EM-6NV"/>
-                            <constraint firstItem="RDZ-aU-pyD" firstAttribute="top" secondItem="y3G-BC-DH6" secondAttribute="top" id="A5n-st-EhF"/>
                             <constraint firstItem="VPB-Mf-4sd" firstAttribute="leading" secondItem="uUS-8T-wvs" secondAttribute="leading" id="ASl-m2-PM8"/>
-                            <constraint firstItem="uUS-8T-wvs" firstAttribute="centerX" secondItem="RDZ-aU-pyD" secondAttribute="centerX" id="Jz4-eY-UqX"/>
-                            <constraint firstItem="VPB-Mf-4sd" firstAttribute="centerX" secondItem="RDZ-aU-pyD" secondAttribute="centerX" id="QAP-Ex-CYM"/>
                             <constraint firstItem="VPB-Mf-4sd" firstAttribute="leading" secondItem="y3G-BC-DH6" secondAttribute="leadingMargin" constant="4" id="g3a-ej-Nfv"/>
                             <constraint firstItem="WFq-sO-nGB" firstAttribute="top" secondItem="uUS-8T-wvs" secondAttribute="bottom" constant="48" id="hrq-sE-MW4"/>
                             <constraint firstItem="VPB-Mf-4sd" firstAttribute="trailing" secondItem="uUS-8T-wvs" secondAttribute="trailing" id="iCK-Ll-Ik1"/>
                             <constraint firstItem="uUS-8T-wvs" firstAttribute="top" secondItem="VPB-Mf-4sd" secondAttribute="bottom" constant="25" id="qzZ-WA-dZf"/>
                             <constraint firstItem="VPB-Mf-4sd" firstAttribute="top" secondItem="vor-Ts-tH2" secondAttribute="bottom" constant="474" id="roa-Pg-dHC"/>
-                            <constraint firstItem="RDZ-aU-pyD" firstAttribute="bottom" secondItem="WFq-sO-nGB" secondAttribute="top" id="wpZ-nU-MWf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="glg-gJ-8M7"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="connexion" destination="uUS-8T-wvs" id="Hr7-xo-VHm"/>
+                        <outlet property="create" destination="VPB-Mf-4sd" id="x63-UU-g3L"/>
+                        <outlet property="jolicut_t" destination="kei-B2-IoY" id="kv5-dZ-NnD"/>
+                        <outlet property="logo" destination="mml-KB-ajc" id="oOy-Bp-dhr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGA-Zl-9Hv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297.5" y="2146.5"/>
+            <point key="canvasLocation" x="-1177.5" y="3118.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iap-bV-14Z">
@@ -574,7 +556,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LK-IL-XLl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297.5" y="1298.5"/>
+            <point key="canvasLocation" x="-198.5" y="3790.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FZr-Vh-S8g">
@@ -588,7 +570,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU3-LV-jsr">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU3-LV-jsr">
                                 <rect key="frame" x="103" y="383" width="169" height="31"/>
                                 <color key="backgroundColor" red="0.91764705882352937" green="0.68235294117647061" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
@@ -601,21 +583,6 @@
                                     <segue destination="49e-Tb-3d3" kind="show" identifier="segueTest" id="ZP3-YE-phu"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iwA-4w-Dcn">
-                                <rect key="frame" x="103" y="277" width="169" height="18"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="169" id="P4y-Mb-zdj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EiG-8w-Fth">
-                                <rect key="frame" x="103" y="325" width="169" height="18"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Td-en-mOs">
                                 <rect key="frame" x="14" y="20" width="31" height="30"/>
                                 <state key="normal" image="arrows.png"/>
@@ -623,29 +590,30 @@
                                     <segue destination="1Gh-nR-UdD" kind="show" id="e1w-Sb-ROR"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Um5-G0-xvP">
+                                <rect key="frame" x="103" y="292" width="169" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mot de passe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qXk-u7-s68">
+                                <rect key="frame" x="103" y="335" width="169" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jolicut2.png" translatesAutoresizingMaskIntoConstraints="NO" id="qOx-9m-f07">
+                                <rect key="frame" x="67" y="28" width="240" height="247"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.16862745098039217" green="0.16078431372549018" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="EiG-8w-Fth" firstAttribute="top" secondItem="iwA-4w-Dcn" secondAttribute="bottom" constant="30" id="085-aP-6yk"/>
-                            <constraint firstItem="iwA-4w-Dcn" firstAttribute="trailing" secondItem="EiG-8w-Fth" secondAttribute="trailing" id="C1z-iR-RVw"/>
-                            <constraint firstItem="iwA-4w-Dcn" firstAttribute="leading" secondItem="EiG-8w-Fth" secondAttribute="leading" id="HQx-Ok-uTj"/>
-                            <constraint firstItem="EiG-8w-Fth" firstAttribute="centerY" secondItem="vzv-Wf-8xA" secondAttribute="centerY" id="Mst-z1-l7U"/>
-                            <constraint firstItem="XU3-LV-jsr" firstAttribute="top" secondItem="EiG-8w-Fth" secondAttribute="bottom" constant="40" id="co1-2A-wA7"/>
-                            <constraint firstItem="EiG-8w-Fth" firstAttribute="leading" secondItem="XU3-LV-jsr" secondAttribute="leading" id="ds6-Jz-rHr"/>
-                            <constraint firstItem="EiG-8w-Fth" firstAttribute="trailing" secondItem="XU3-LV-jsr" secondAttribute="trailing" id="kRe-ad-fX3"/>
-                            <constraint firstItem="iwA-4w-Dcn" firstAttribute="centerX" secondItem="vzv-Wf-8xA" secondAttribute="centerX" id="tZQ-lF-RSq"/>
-                        </constraints>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="login" destination="iwA-4w-Dcn" id="vRB-zF-gNS"/>
-                        <outlet property="password" destination="EiG-8w-Fth" id="zMa-2h-qGu"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Pb-DA-mw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281.5" y="2146.5"/>
+            <point key="canvasLocation" x="-198.5" y="2486.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -673,12 +641,14 @@
     <resources>
         <image name="Circled-inscr.png" width="44" height="44"/>
         <image name="Cut-1" width="44" height="44"/>
+        <image name="JOLICUT.png" width="700" height="903"/>
+        <image name="Jolicut2.png" width="700" height="903"/>
         <image name="List-2" width="44" height="44"/>
         <image name="Map" width="44" height="44"/>
         <image name="Profil" width="44" height="44"/>
+        <image name="ack.png" width="54" height="54"/>
         <image name="arrows.png" width="44" height="44"/>
         <image name="circle.png" width="44" height="44"/>
-        <image name="cross2.png" width="44" height="44"/>
         <image name="facture" width="44" height="44"/>
         <image name="home - inscr.png" width="44" height="44"/>
         <image name="qrcode" width="44" height="44"/>
@@ -686,7 +656,6 @@
         <image name="tool.png" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R7y-n2-ggs"/>
         <segue reference="e1w-Sb-ROR"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
