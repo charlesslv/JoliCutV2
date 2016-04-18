@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         }
         else
         {
-            let url:NSURL = NSURL(string: "http://10.104.3.133/api/authenticate/"+login.text!+"?mdp="+password.text!)!
+            let url:NSURL = NSURL(string: "http://99.222.74.85/api/authenticate/"+login.text!+"/"+password.text!)!
             let session = NSURLSession.sharedSession()
             let request = NSMutableURLRequest(URL: url)
             request.HTTPMethod = "POST"
