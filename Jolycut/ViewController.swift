@@ -10,6 +10,23 @@ import UIKit
 
 struct MyVariables {
     static var ErrorCode = 0
+    static var data = NSString()
+}
+struct User  {
+    static var bit = NSArray()
+    static var ID = User.bit [1]
+    static var Lastname = User.bit [2]
+    static var Firstname = User.bit [3]
+    static var Password = User.bit [4]
+    static var Email = User.bit [5]
+    static var Paytool = User.bit [6]
+    static var Adress = User.bit [7]
+    static var Telnumb = User.bit [8]
+    static var Picture = User.bit [9]
+    static var Type = User.bit [10]
+    static var Latt = User.bit [11]
+    static var Long = User.bit [12]
+    static var Factures = User.bit [13]
 }
 
 class ViewController: UIViewController {
@@ -60,9 +77,16 @@ class ViewController: UIViewController {
                 (let data, let response, let error) in
                 if (nil != response as? NSHTTPURLResponse) {
                     let httpResponse = response as? NSHTTPURLResponse
+                    if (httpResponse!.statusCode != 404) {
+                        let urlContents = try! NSString(contentsOfURL: url, encoding: NSUTF8StringEncoding)
+                        guard let _:NSString = urlContents else {
+                            print("error")
+                            return
+                        }
+                        MyVariables.data = urlContents
+                    }
                     MyVariables.ErrorCode = httpResponse!.statusCode
                     print("Fin de recherche http :")
-                    print(MyVariables.ErrorCode)
                     guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
                         print("error")
                         return
@@ -71,17 +95,18 @@ class ViewController: UIViewController {
                 else {
                     MyVariables.ErrorCode = 8
                 }
-                
             }
             while (MyVariables.ErrorCode != 200 || MyVariables.ErrorCode != 404 || MyVariables.ErrorCode != 8)
             {
-                print("Before task.resume")
-                print(MyVariables.ErrorCode)
                 task.resume()
-                print("After task.resume")
-                print(MyVariables.ErrorCode)
                 if (MyVariables.ErrorCode == 200)
                 {
+                    //print("data!!!!!!!!!!")
+                    //print(MyVariables.data)
+                    print("element 1")
+                    User.bit = MyVariables.data.componentsSeparatedByString(",")
+                    print(User.Firstname)
+                    print(User.Lastname)
                     MyVariables.ErrorCode = 0
                     return true
                 }
@@ -104,12 +129,6 @@ class ViewController: UIViewController {
                     return false
                 }
             }
-        /*override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
-         if (segue.identifier == "segueTest") {
-         let svc = segue!.destinationViewController as! secondViewController;
-         svc.toLog = login.text
-         svc.toPass = password.text
-         }*/
         }
         return false
     }
