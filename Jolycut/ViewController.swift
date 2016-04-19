@@ -14,19 +14,20 @@ struct MyVariables {
 }
 struct User  {
     static var bit = NSArray()
-    static var ID = User.bit [1]
-    static var Lastname = User.bit [2]
-    static var Firstname = User.bit [3]
-    static var Password = User.bit [4]
-    static var Email = User.bit [5]
-    static var Paytool = User.bit [6]
-    static var Adress = User.bit [7]
-    static var Telnumb = User.bit [8]
-    static var Picture = User.bit [9]
-    static var Type = User.bit [10]
-    static var Latt = User.bit [11]
-    static var Long = User.bit [12]
-    static var Factures = User.bit [13]
+    static var elems = NSArray()
+    static var ID = NSString()
+    static var Lastname = NSString()
+    static var Firstname = NSString()
+    static var Password = NSString()
+    static var Email = NSString()
+    static var Paytool = NSString()
+    static var Adress = NSString()
+    static var Telnumb = NSString()
+    static var Picture = NSString()
+    static var Type = NSString()
+    static var Latt = NSString()
+    static var Long = NSString()
+    static var Factures = NSString()
 }
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -110,7 +111,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     //print("data!!!!!!!!!!")
                     //print(MyVariables.data)
                     print("element 1")
-                    User.bit = MyVariables.data.componentsSeparatedByString(",")
+                    User.elems = MyVariables.data.componentsSeparatedByString("\",\"")
+                    User.ID = User.elems[0].componentsSeparatedByString("\":\"")[1]
+                    User.Lastname = User.elems[1].componentsSeparatedByString("\":\"")[1]
+                    User.Firstname = User.elems[2].componentsSeparatedByString("\":\"")[1]
+                    User.Password = User.elems[3].componentsSeparatedByString("\":\"")[1]
+                    User.Email = User.elems[4].componentsSeparatedByString("\":\"")[1]
+                    User.Paytool = User.elems[5].componentsSeparatedByString("\":\"")[1]
+                    User.Adress = User.elems[6].componentsSeparatedByString("\":\"")[1]
+                    User.Telnumb = User.elems[7].componentsSeparatedByString("\":\"")[1]
+                    User.Picture = User.elems[8].componentsSeparatedByString("\":\"")[1]
+                    User.Factures = User.elems[9].componentsSeparatedByString("\":\"")[1]
                     print(User.Firstname)
                     print(User.Lastname)
                     MyVariables.ErrorCode = 0
