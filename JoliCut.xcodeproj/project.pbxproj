@@ -12,6 +12,7 @@
 		17A1939B1CC1669100FDF634 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A193961CC1649A00FDF634 /* Comfortaa-Light.ttf */; };
 		17A1939C1CC1669100FDF634 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A193971CC1649A00FDF634 /* Comfortaa-Regular.ttf */; };
 		19E97CFB1CC0D2A800EE98B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */; };
+		7902B5B61CC6122E00F861B8 /* InscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */; };
 		A31FEE521CC1594D00FE0583 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A31FEE4A1CC1594D00FE0583 /* cross.png */; };
 		A31FEE531CC1594D00FE0583 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = A31FEE4B1CC1594D00FE0583 /* circle.png */; };
 		A31FEE541CC1594D00FE0583 /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = A31FEE4C1CC1594D00FE0583 /* arrows.png */; };
@@ -61,6 +62,7 @@
 		17A193971CC1649A00FDF634 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Regular.ttf"; path = "../../../Desktop/comfortaa/Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		17A193981CC1656A00FDF634 /* ios camp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ios camp.jpg"; path = "../../../Desktop/ios camp.jpg"; sourceTree = "<group>"; };
 		19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InscriptionViewController.swift; sourceTree = "<group>"; };
 		797BB21E1CC12505009ED915 /* Jolicut-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jolicut-Bridging-Header.h"; sourceTree = "<group>"; };
 		A31FEE4A1CC1594D00FE0583 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		A31FEE4B1CC1594D00FE0583 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				A32923C51CC12150006544B9 /* image */,
 				A34301971CBE9EF300A18E8F /* AppDelegate.swift */,
 				A343019D1CBE9EF300A18E8F /* Main.storyboard */,
+				7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */,
 				19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */,
 				A34301991CBE9EF300A18E8F /* FirstViewController.swift */,
 				A343019B1CBE9EF300A18E8F /* SecondViewController.swift */,
@@ -367,6 +370,7 @@
 				19E97CFB1CC0D2A800EE98B2 /* ViewController.swift in Sources */,
 				A343019A1CBE9EF300A18E8F /* FirstViewController.swift in Sources */,
 				A37FF7AC1CC5175100E2BAD0 /* JolicutViewController.swift in Sources */,
+				7902B5B61CC6122E00F861B8 /* InscriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
