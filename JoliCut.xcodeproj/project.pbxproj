@@ -34,6 +34,7 @@
 		A37FF7A01CC4E7D000E2BAD0 /* Jolicut2.png in Resources */ = {isa = PBXBuildFile; fileRef = A37FF79F1CC4E7D000E2BAD0 /* Jolicut2.png */; };
 		A37FF7A41CC5142C00E2BAD0 /* JOLICUT.png in Resources */ = {isa = PBXBuildFile; fileRef = A37FF7A31CC5142C00E2BAD0 /* JOLICUT.png */; };
 		A37FF7AC1CC5175100E2BAD0 /* JolicutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37FF7AB1CC5175100E2BAD0 /* JolicutViewController.swift */; };
+		A37FF7AE1CC6091B00E2BAD0 /* séparateur.png in Resources */ = {isa = PBXBuildFile; fileRef = A37FF7AD1CC6091B00E2BAD0 /* séparateur.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		A37FF79F1CC4E7D000E2BAD0 /* Jolicut2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jolicut2.png; sourceTree = "<group>"; };
 		A37FF7A31CC5142C00E2BAD0 /* JOLICUT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JOLICUT.png; sourceTree = "<group>"; };
 		A37FF7AB1CC5175100E2BAD0 /* JolicutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JolicutViewController.swift; sourceTree = "<group>"; };
+		A37FF7AD1CC6091B00E2BAD0 /* séparateur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "séparateur.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		A32923C51CC12150006544B9 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				A37FF7AD1CC6091B00E2BAD0 /* séparateur.png */,
 				A37FF7A31CC5142C00E2BAD0 /* JOLICUT.png */,
 				A31FEE6F1CC271C900FE0583 /* cross2.png */,
 				A31FEE6D1CC271C400FE0583 /* delete.png */,
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31FEE6E1CC271C400FE0583 /* delete.png in Resources */,
+				A37FF7AE1CC6091B00E2BAD0 /* séparateur.png in Resources */,
 				17A1939A1CC1669100FDF634 /* Comfortaa-Bold.ttf in Resources */,
 				17A1939B1CC1669100FDF634 /* Comfortaa-Light.ttf in Resources */,
 				17A1939C1CC1669100FDF634 /* Comfortaa-Regular.ttf in Resources */,
