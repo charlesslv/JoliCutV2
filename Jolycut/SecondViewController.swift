@@ -22,11 +22,5 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*func setNavBarToTheView()
-    {
-        NavBar.frame=CGRectMake(0, 0, 320, 22)  // Here you can set you Width and Height for your navBar
-        NavBar.backgroundColor=(UIColor .blackColor())
-        self.view .addSubview(NavBar)
-    }*/
 }
 
