@@ -16,7 +16,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     let locationManager = CLLocationManager()
     
     override func viewDidLoad()
-    {0
+    {
         super.viewDidLoad()
         
         self.MapView.mapType = MKMapType.Standard
