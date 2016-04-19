@@ -24,6 +24,8 @@
             <string>Comfortaa-Bold</string>
             <string>Comfortaa-Bold</string>
             <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
         </mutableArray>
         <mutableArray key="Comfortaa-Regular.ttf">
             <string>Comfortaa</string>
@@ -447,7 +449,6 @@
         <!--View Controller-->
         <scene sceneID="lnC-3h-tN7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ame-Vf-F96" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="nao-qo-UuA" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5ii-Y7-zO1"/>
@@ -466,6 +467,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ame-Vf-F96" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1322" y="2340"/>
         </scene>
@@ -568,6 +570,10 @@
                                         <state key="normal" title="S'inscrire">
                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Signup:" destination="uf3-GI-knf" eventType="touchUpInside" id="ckd-i8-MW5"/>
+                                            <segue destination="3A7-EV-UYn" kind="show" identifier="Connect" id="vgZ-Zt-KiY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0l2-Uw-wC0">
                                         <rect key="frame" x="44" y="8" width="44" height="44"/>
@@ -594,6 +600,15 @@
                                             <outlet property="delegate" destination="uf3-GI-knf" id="qjc-nz-gmT"/>
                                         </connections>
                                     </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vxk-mW-HLD">
+                                        <rect key="frame" x="92" y="319" width="300" height="40"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="uf3-GI-knf" id="Vgz-Jc-KeM"/>
+                                        </connections>
+                                    </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tool.png" translatesAutoresizingMaskIntoConstraints="NO" id="eHH-IP-OKp">
                                         <rect key="frame" x="54" y="217" width="25" height="25"/>
                                     </imageView>
@@ -612,6 +627,15 @@
                                             <outlet property="delegate" destination="uf3-GI-knf" id="Hhd-Fu-6ru"/>
                                         </connections>
                                     </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Prenom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oLS-vI-Mjm">
+                                        <rect key="frame" x="92" y="374" width="300" height="40"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="uf3-GI-knf" id="dlI-em-E8Z"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16862745100000001" green="0.16078431369999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -619,10 +643,16 @@
                         <color key="backgroundColor" red="0.16862745100000001" green="0.16078431369999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Email" destination="yC6-Ac-pMq" id="axw-tn-1BU"/>
+                        <outlet property="FirstName" destination="oLS-vI-Mjm" id="ouX-bP-EJ2"/>
+                        <outlet property="LastName" destination="vxk-mW-HLD" id="rxA-T5-Zbi"/>
+                        <outlet property="Password" destination="7AF-55-sAt" id="twi-Zv-D57"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LK-IL-XLl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-198.5" y="3790.5"/>
+            <point key="canvasLocation" x="-669.5" y="3488.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FZr-Vh-S8g">
@@ -741,7 +771,8 @@
         <image name="tool.png" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e1w-Sb-ROR"/>
+        <segue reference="vgZ-Zt-KiY"/>
+        <segue reference="tQR-A1-bu6"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
