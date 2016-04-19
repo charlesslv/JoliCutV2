@@ -33,11 +33,16 @@ struct User  {
 class ViewController: UIViewController, UITextFieldDelegate {
     
     
-    @IBOutlet var button_entity: UIButton!
     @IBOutlet var login: UITextField!
     @IBOutlet var password: UITextField!
+    
+    @IBAction func Back(sender: AnyObject) {
+        performSegueWithIdentifier("BackToMenu", sender: self)
+    }
+    
     @IBAction func button(sender: AnyObject) {
     }
+    
     func CloseKeyboard() {
             view.endEditing(true)
     }
@@ -108,9 +113,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 task.resume()
                 if (MyVariables.ErrorCode == 200)
                 {
-                    //print("data!!!!!!!!!!")
-                    //print(MyVariables.data)
-                    print("element 1")
                     User.elems = MyVariables.data.componentsSeparatedByString("\",\"")
                     User.ID = User.elems[0].componentsSeparatedByString("\":\"")[1]
                     User.Lastname = User.elems[1].componentsSeparatedByString("\":\"")[1]
@@ -151,11 +153,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        
         textField.resignFirstResponder()
-        
         return true
     }
-    //Calls this function when the tap is recognized.
 }
 

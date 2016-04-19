@@ -1,3 +1,4 @@
+
 //
 //  ProfileInfoViewController.swift
 //  JoliCut
@@ -18,11 +19,11 @@ class ProfileInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nom.text = (User.Lastname as! String)
-        prenom.text = (User.Firstname as! String)
-        email.text = (User.Email as! String)
-        adresse.text = (User.Adress as! String)
-        tel.text = (User.Telnumb as! String)
+        nom.text = (User.Lastname as String)
+        prenom.text = (User.Firstname as String)
+        email.text = (User.Email as String)
+        adresse.text = (User.Adress as String)
+        tel.text = (User.Telnumb as String)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -30,5 +31,7 @@ class ProfileInfoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func Back(sender: AnyObject) {
+        performSegueWithIdentifier("Back", sender: self)
+    }
 }

@@ -19,6 +19,10 @@ class InscriptionViewController: UIViewController, UITextFieldDelegate {
     @IBAction func Signup(sender: AnyObject) {
     }
     
+    @IBAction func Back(sender: AnyObject) {
+        performSegueWithIdentifier("BackToMenu", sender: self)
+    }
+    
     func CloseKeyboard() {
         view.endEditing(true)
     }

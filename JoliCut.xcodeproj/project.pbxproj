@@ -12,6 +12,7 @@
 		17A1939B1CC1669100FDF634 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A193961CC1649A00FDF634 /* Comfortaa-Light.ttf */; };
 		17A1939C1CC1669100FDF634 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A193971CC1649A00FDF634 /* Comfortaa-Regular.ttf */; };
 		194660DC1CC61AC90006729B /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194660DB1CC61AC90006729B /* ProfileInfoViewController.swift */; };
+		194660DF1CC644900006729B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194660DE1CC644900006729B /* ProfileViewController.swift */; };
 		19E97CFB1CC0D2A800EE98B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */; };
 		7902B5B61CC6122E00F861B8 /* InscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */; };
 		A31FEE521CC1594D00FE0583 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A31FEE4A1CC1594D00FE0583 /* cross.png */; };
@@ -63,6 +64,7 @@
 		17A193971CC1649A00FDF634 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Regular.ttf"; path = "../../../Desktop/comfortaa/Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		17A193981CC1656A00FDF634 /* ios camp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ios camp.jpg"; path = "../../../Desktop/ios camp.jpg"; sourceTree = "<group>"; };
 		194660DB1CC61AC90006729B /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
+		194660DE1CC644900006729B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InscriptionViewController.swift; sourceTree = "<group>"; };
 		797BB21E1CC12505009ED915 /* Jolicut-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jolicut-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -124,6 +126,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		194660DD1CC6444C0006729B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A34301971CBE9EF300A18E8F /* AppDelegate.swift */,
+				194660DE1CC644900006729B /* ProfileViewController.swift */,
+				194660DB1CC61AC90006729B /* ProfileInfoViewController.swift */,
+				7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */,
+				19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */,
+				A34301991CBE9EF300A18E8F /* FirstViewController.swift */,
+				A343019B1CBE9EF300A18E8F /* SecondViewController.swift */,
+				A37FF7AB1CC5175100E2BAD0 /* JolicutViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		A32923C01CC117B1006544B9 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,20 +198,14 @@
 		A34301961CBE9EF300A18E8F /* Jolycut */ = {
 			isa = PBXGroup;
 			children = (
+				194660DD1CC6444C0006729B /* ViewControllers */,
 				A32923C01CC117B1006544B9 /* Font */,
 				A32923C51CC12150006544B9 /* image */,
-				A34301971CBE9EF300A18E8F /* AppDelegate.swift */,
-				194660DB1CC61AC90006729B /* ProfileInfoViewController.swift */,
 				A343019D1CBE9EF300A18E8F /* Main.storyboard */,
-				7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */,
-				19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */,
-				A34301991CBE9EF300A18E8F /* FirstViewController.swift */,
-				A343019B1CBE9EF300A18E8F /* SecondViewController.swift */,
 				A34301A01CBE9EF300A18E8F /* Assets.xcassets */,
 				A34301A21CBE9EF300A18E8F /* LaunchScreen.storyboard */,
 				A34301A51CBE9EF300A18E8F /* Info.plist */,
 				797BB21E1CC12505009ED915 /* Jolicut-Bridging-Header.h */,
-				A37FF7AB1CC5175100E2BAD0 /* JolicutViewController.swift */,
 			);
 			path = Jolycut;
 			sourceTree = "<group>";
@@ -374,6 +385,7 @@
 				A343019A1CBE9EF300A18E8F /* FirstViewController.swift in Sources */,
 				A37FF7AC1CC5175100E2BAD0 /* JolicutViewController.swift in Sources */,
 				7902B5B61CC6122E00F861B8 /* InscriptionViewController.swift in Sources */,
+				194660DF1CC644900006729B /* ProfileViewController.swift in Sources */,
 				194660DC1CC61AC90006729B /* ProfileInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
